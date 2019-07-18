@@ -1,0 +1,51 @@
+{
+    "name": "egg-cjl-tmpl",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "egg-bin dev",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "npx eslint --ext .js,.ts .",
+        "fix": "npx eslint --ext .js,.ts . --fix",
+        "tsc": "ets && tsc -p tsconfig.json",
+        "clean": "ets clean",
+        "debug": "egg-bin debug",
+        "doc": "apidoc -i app/ -o doc/"
+    },
+    "author": "umaruchan",
+    "license": "ISC",
+    "egg": {
+        "typescript": true,
+        "declarations": true
+    },
+    "apidoc": {
+        "title": "cjl-tmpl-api-doc",
+        "version": "1.0.0",
+        "url": "http://egg-tmpl.icjl.dev"
+    },
+    "dependencies": {
+        "egg": "^2.22.2",
+        "egg-scripts": "^2.11.0",
+        "egg-sequelize": "^5.2.0",
+        "joi": "^14.3.1",
+        "lodash": "^4.17.14",
+        "mysql2": "^1.6.5",
+        "uuid": "^3.3.2"
+    },
+    "devDependencies": {
+        "@types/joi": "^14.3.3",
+        "@types/node": "^12.6.2",
+        "@types/uuid": "^3.4.5",
+        "@typescript-eslint/eslint-plugin": "^1.10.2",
+        "@typescript-eslint/parser": "^1.10.2",
+        "apidoc": "^0.17.7",
+        "egg-bin": "^4.13.1",
+        "eslint": "^5.16.0",
+        "eslint-config-prettier": "^6.0.0",
+        "eslint-plugin-prettier": "^3.1.0",
+        "prettier": "1.18.2",
+        "tslib": "^1.10.0",
+        "typescript": "^3.5.2"
+    }
+}

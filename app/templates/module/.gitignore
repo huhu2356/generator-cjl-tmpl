@@ -1,0 +1,12 @@
+node_modules/
+logs/
+run/
+typings/*/*
+doc/
+
+app/**/*.js
+test/**/*.js
+config/**/*.js
+app/**/*.map
+test/**/*.map
+config/**/*.map
